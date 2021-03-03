@@ -290,7 +290,6 @@
   @media (min-width:460px) {
   .port-item img{
     height: 100%;
-    background: red;
   }
   }
   @media (min-width:60rem) {
