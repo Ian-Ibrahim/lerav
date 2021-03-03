@@ -139,6 +139,9 @@
 .home-hero{
   background-image: url('https://i.imgur.com/07nGAKt.jpeg');
   background-size: cover;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #232323;
@@ -157,6 +160,9 @@
 .products-hero{
   background-image: url('https://i.imgur.com/07nGAKt.jpeg ');
   background-size: cover;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #232323;
@@ -225,6 +231,9 @@
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
     background-repeat: no-repeat;
     padding-bottom:10em;
     width: 100%;
