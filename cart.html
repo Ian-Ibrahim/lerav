@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style/master.css">
+    <link rel="stylesheet" type="text/css" href="style/loader.css" id="styles-animations">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.js" integrity="sha512-lib7WdJvAnfLLBi5AHdN+wUkcWwpu1fmYzyEHQijZq7WedcwBiwdVNbcML2rAtKvwtOIU7thMGB+O9Kpb9g2Cw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b2d1a2836c.js" crossorigin="anonymous"></script>
+    <script src="js/loader.js"></script>
+    <script type="text/javascript" src="js/app.js" async></script>
+    <style media="screen">
+    .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/img/flags.png");}
+
+   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+     .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/img/flags@2x.png");}
+   }
+    </style>
+    <!-- <script type="text/javascript" src="store.js" ></script> -->
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <div id="myBody">
+      <header>
+        <img class="logo" alt="Lerav collections logo"src="img/logo.png" />
+        <nav>
+          <ul>
+            <li><a href=""> Home</a></li>
+            <li><a href=""> About Us</a></li>
+            <li class="active"><a  class="active" href="cart.html"> Cart</a></li>
+            <li><a href=""> Portfolio</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="products-hero">
+        <div class="container">
+          <h2><a href="index.html">Home</a>-> <span>Cart</span></h2>
+        </div>
+      </section>
+      <section class="cart-container">
+        <h2>Cart items</h2>
+        <div class="cart-row cart-header-row">
+          <span class="cart-item cart-header cart-column">Item</span>
+          <span class="cart-item cart-header cart-column">price</span>
+          <span class="cart-item cart-header cart-column">quantity</span>
+        </div>
+        <div class="cart-items">
+          <div class="cart-row" id="productOne">
+            <div class="cart-item cart-column">
+              <img src="img/no_products_found.png" alt="product one" id="product-one-image" class="cart-item-image" width="100" height="100">
+              <span class="cart-item-title" id="product-one-title">No product Selected</span>
+            </div>
+            <div class="cart-column">
+              Ksh.  <span class="cart-price" id="product-one-price">0</span>
+            </div>
+            <div class="cart-item cart-column">
+              <input type="number" name="" id="product-one-quantity" class="cart-quantity-input" value="1" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');">
+              <button type="button" class="btn btn-danger" name="button">Remove</button>
+            </div>
+          </div>
+          <!-- product 2 -->
+          <div class="cart-row" id="productTwo">
+            <div class="cart-item cart-column">
+              <img src="img/no_products_found.png" alt="product one" id="product-two-image" class="cart-item-image" width="100" height="100">
+              <span class="cart-item-title" id="product-two-title">No product Selected</span>
+            </div>
+            <div class="cart-column">
+              Ksh.  <span class="cart-price " id="product-two-price">0</span>
+            </div>
+
+            <div class="cart-item cart-column">
+              <input type="number" name="" id="product-two-quantity" class="cart-quantity-input" value="1" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');">
+              <button type="button" class="btn btn-danger" name="button">Remove</button>
+            </div>
+          </div>
+          <!-- product3 -->
+          <div class="cart-row" id="productThree">
+              <div class="cart-item cart-column">
+                <img src="img/no_products_found.png" alt="product one" id="product-three-image" class="cart-item-image" width="100" height="100">
+                <span class="cart-item-title" id="product-three-title">No product Selected</span>
+              </div>
+              <div class="cart-column">
+                Ksh.  <span class="cart-price " id="product-three-price">0</span>
+              </div>
+
+              <div class="cart-item cart-column">
+                <input type="number" id="product-three-quantity"name="" class="cart-quantity-input" value="1" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');">
+                <button type="button" class="btn btn-danger" name="button">Remove</button>
+              </div>
+          </div>
+            <!-- product 4 -->
+          <div class="cart-row " id="productFour">
+                <div class="cart-item cart-column">
+                  <img src="img/no_products_found.png" alt="product one" id="product-four-image" class="cart-item-image" width="100" height="100">
+                  <span class="cart-item-title" id="product-four-title">No product Selected</span>
+                </div>
+                <div class="cart-column">
+                  Ksh.  <span class="cart-price " id="product-four-price">0</span>
+                </div>
+
+                <div class="cart-item cart-column">
+                  <input type="number" id="product-four-quantity"name="" class="cart-quantity-input" value="1" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');">
+                  <button type="button" class="btn btn-danger" name="button">Remove</button>
+                </div>
+          </div>
+
+            <!-- product 5 -->
+            <div class="cart-row "id="productFive">
+                <div class="cart-item cart-column">
+                  <img src="img/no_products_found.png" alt="product one" id="product-five-image" class="cart-item-image" width="100" height="100">
+                  <span class="cart-item-title" id="product-five-title">No product Selected</span>
+                </div>
+                <div class="cart-column">
+                  Ksh.  <span class="cart-price " id="product-five-price">0</span>
+                </div>
+
+                <div class="cart-item cart-column">
+                  <input type="number" id="product-five-quantity" name="" class="cart-quantity-input" value="1" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');">
+                  <button type="button" class="btn btn-danger" name="button">Remove</button>
+                </div>
+              </div>
+        </div>
+          </div>
+        </div>
+        <div class="cart-total">
+          <strong>Total(Ksh)</strong>
+          <span class="cart-total-price">0.00</span>
+          <button class="btn-purchase button button-dark" onclick="on()">Confirm Order</button>
+        </div>
+      </section>
+      <br />
+      <div id="order-form">
+
+        <form class="appointment" name="orders" action="index.html" method="post" id="orders" data-netlify="true">
+          <i class="fas fa-times-circle" onclick="off()"></i>
+           <h1>Confirm order</h1>
+           <div class="input-container">
+              <label for="firstname">Name</label>
+              <input type="text" required placeholder="First Name" id="firstname" name="firstname" value="">
+              <input type="text" required placeholder="Last Name" Name="lastName" value="">
+           </div>
+           <div class="input-container">
+              <label for="">Email</label>
+              <input type="email"required placeholder="someone@gmail.com" name="email" value="">
+           </div>
+           <div class="input-container">
+              <label for="">Phone Number</label>
+              <input type="tel" id="phone" name="phone Number">
+           </div>
+
+           <div class="input-container">
+             <label>Choose your Location:</label>
+            <input list="location" name="location" />
+            <datalist id="location">
+              <option value="CBD">
+              <option value="Langata">
+              <option value="South C">
+                <option value="kasarani">
+                <option value="umoja">
+                <option value="kikuyu">
+                <option value="Dagoretti">
+                <option value="Runda">
+                <option value="lavington">
+                <option value="parklands">
+                <option value="Nairobi West">
+                <option value="South B">
+              <option value="Buruburu">
+              <option value="Karen">
+                <option value="Embakasi">
+              <option value="Donholm">
+                <option value="Westlands">
+                  <option value="Kisumu">
+                  <option value="Mombasa">
+              <option value="Eldoret">
+            </datalist>
+           </div>
+           <div class="input-container">
+              <label for="">Items</label>
+                <textarea name="name" id="list" rows="8" cols="80" disabled ></textarea>
+           </div>
+           <div class="input-container">
+              <button type="submit" class="button button-dark" onclick="confirmOrder()"name="button">Confirm Order</button>
+           </div>
+        </form>
+      </div>
+
+
+
+      <div class="footer-container">
+      <div class="container ">
+        <footer>
+          <div class="col-3">
+          <p>
+            <h3>about us</h3>
+            we are an  independent family run jewelry business established in Kenya
+            since 1994. Coming from a background of jewelers from the last three generations
+             we have wealth of knowledge in this business.
+            </p>
+            </div>
+            <div class="col-1">
+            <ul class="unstyled-lists">
+              <h3>Useful links</h3>
+              <li><a>About Lerav collections</a></li>
+              <li><a>Delivery Guide</a></li>
+              <li><a>terms & conditions</a></li>
+              <li><a>Frequently asked questions</a></li>
+            </ul>
+            </div>
+            <div class="col-1">
+
+              <ul class="unstyled-lists socials">
+                <h3>follow us</h3>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+              </ul>
+              <ul >
+                <h3>Accepted payments</h3>
+                <img src="https://i.imgur.com/dhitA17.png" alt="mpesa logo">
+                <img src="https://i.imgur.com/I4CmQWe.png" alt="airtel money logo">
+                <img src="https://i.imgur.com/mlPaEZa.png" alt="mastercard logo">
+                <img src="https://i.imgur.com/nIz4Eof.png" alt="visa logo">
+              </ul>
+            </div>
+
+            <section class="footnote">
+              Created By <span>Ian Okova</span><br />
+
+                <h3>follow him</h3>
+                <ul>
+                  <li><a href="ianokova@gmail.com" class="ian-social"><i class="fas fa-envelope"></i></a></li>
+                  <li> <a href="https://twitter.com/IanOkova" class="ian-social"><i class="fab fa-twitter"></i></a>  </li>
+                  <li><a href="tel:+254114095616" class="ian-social"><i class="fas fa-phone"></i></a></li>
+                  <li> <a href="https://www.youtube.com/channel/UCrdRPXdMp0vZtod7nGub8zA" class="ian-social"><i class="fab fa-youtube"></i></a>  </li>
+                  <li><a href=" https://wa.me/254114095616" class="ian-social"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+
+              <br />
+              2020&#169;
+            </section>
+        </footer>
+      </div>
+      </div>
+   </div>
+  </body>
+  <div id="loader">
+     <div class="folding">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+     </div>
+  </div>
+</html>
