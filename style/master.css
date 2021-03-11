@@ -3,11 +3,14 @@
    box-sizing: border-box;
    overflow-y: visible;
  }
+
   html,body{
     margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     height: 100%;
+    background: #FFF;
   }
 
   img{
@@ -46,7 +49,7 @@
   }
   .unstyled-lists{
     margin:0;
-    list-style: none;
+    list-style:circle;
 
   }
   @media (min-width:60rem) {
@@ -237,6 +240,8 @@
     background-repeat: no-repeat;
     padding-bottom:10em;
     width: 100%;
+    height: 40%;
+
     position: relative;
     left:2.5em;
   }
@@ -375,6 +380,12 @@
   padding: .25em;
 
 }
+#list{
+  border:none;
+  color: #232323;
+  resize: none;
+  background: transparent;
+}
 /* footer */
 
 footer{
@@ -503,4 +514,115 @@ footer img{
 }
 .footnote ul li:nth-child(5) a:before {
   background: #4FCE5D;
+}
+/* shopping cart */
+.cart-header{
+  font-weight: 600;
+}
+.cart-header-row{
+  background-color: #232323;
+  color: white;
+}
+.cart-row{
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid rgba(35,35,35,0.5);
+}
+.cart-column{
+  flex:30%;
+  padding: .1em 0;
+  border-right: 2px solid  rgba(35,35,35,0.5);
+}
+.cart-quantity-input{
+  width: 2em;
+}
+.cart-item-title{
+  display: block;
+}
+.btn-danger{
+  background-color: rgba(207, 29, 29,0.5);
+  border: none;
+  color: #232323;
+  padding: .5em;
+  outline: none;
+}
+.btn-danger:hover,
+.btn-danger:focus{
+  background-color: rgba(207, 29, 29,0.8);
+}
+.cart-total{
+  padding-top: 1em;
+  text-align: center;
+}
+.cart-total>*{
+  display: block
+}
+.cart-total-price{
+  font-size: 2em;
+}
+.btn-purchase{
+  margin: auto;
+}
+@media (min-width:60rem) {
+  .cart-quantity-input{
+    width: 5em;
+  }
+}
+/* shoppingcart icon */
+.badge {
+padding-left: 9px;
+padding-right: 9px;
+-webkit-border-radius: 9px;
+-moz-border-radius: 9px;
+border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+background-color: #c67605;
+}
+#lblCartCount {
+  font-size: 12px;
+  background: white;
+  color: #232323;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+}
+/* confirm order */
+#order-form{
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:100%;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding-bottom: 4em;
+  transition-duration: 1s;
+}
+#order-form form{
+  padding-bottom: 1em;
+  /* overflow: scroll; */
+  background: white;
+}
+.fa-times-circle{
+  background: white;
+  position: absolute;
+  left:90%;
+  font-size: 1.5em;
+  top:0;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent ;
 }
