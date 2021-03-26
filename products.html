@@ -1,186 +1,218 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="style/master.css">
-    <link rel="stylesheet" type="text/css" href="style/loader.css" id="styles-animations">
-    <script src="https://kit.fontawesome.com/b2d1a2836c.js" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="store.js" async></script> -->
-    <script type="text/javascript" src="js/app.js" async></script>
-    <script src="js/loader.js"></script>
-    <title>Products</title>
-  </head>
-  <body>
-    <div id="myBody">
-    <header>
-      <img class="logo" alt="Lerav collections logo"src="img/logo.png" />
-      <nav>
-        <ul>
-          <li><a href=""> Home</a></li>
-          <li><a href=""> About Us</a></li>
-          <li class="active"><a  class="active"href="products.html"> products</a></li>
-          <li><a href=""> Portfolio</a></li>
-          <i class="fa" style="font-size:24px;color:white;">&#xf07a;</i>
-<span class='badge badge-warning' id='lblCartCount'> 5 </span>
 
-        </ul>
-      </nav>
+<head>
+	<meta charset="utf-8">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style/master.css">
+	<link rel="stylesheet" type="text/css" href="style/loader.css" id="styles-animations">
+	<script src="https://kit.fontawesome.com/b2d1a2836c.js" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="store.js" async></script> -->
+	<script type="text/javascript" src="js/app.js" async></script>
+	<script src="js/loader.js"></script>
+	<title>Products</title>
+</head>
+<div id="loader">
+	<div class="loader">
+		<div class="l_main">
+			<div class="l_square"><span></span><span></span><span></span>
+			</div>
+			<div class="l_square"><span></span><span></span><span></span>
+			</div>
+			<div class="l_square"><span></span><span></span><span></span>
+			</div>
+			<div class="l_square"><span></span><span></span><span></span>
+			</div>
+		</div>
+	</div>
+</div>
 
-    </header>
+<body>
+	<div id="myBody">
+		<header>
+			<img class="logo" alt="Lerav collections logo" src="img/logo black.png" />
+			<nav>
+				<ul>
+					<li class="hvr-underline-from-left"><a href=""> Home</a>
+					</li>
+					<li class="hvr-underline-from-left"><a href=""> About Us</a>
+					</li>
+					<li class="active hvr-underline-from-left"><a class="active" href="products.html"> products</a>
+					</li>
+					<li class="hvr-underline-from-left"><a href=""> Portfolio</a>
+					</li>
+					<li>
+						<div class="cart-icon">
+							<a href="cart.html">
+								<i class="fas fa-shopping-bag"></i>
+								<span id="cart-items-count">0</span>
+								<script>var cartItemCount = localStorage.length;
+									document.getElementById('cart-items-count').innerHTML = Math.floor(cartItemCount / 3);</script>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="products-hero">
+			<div class="container">
+				<h2><a href="index.html">Home</a>-> <span>products</span></h2>
+			</div>
+		</section>
+		<section class="products">
+			<h1>Our products</h1>
+			<div class="container">
+				<!-- product one -->
+				<figure class="port-item">
+					<img src="img/product-1.png" class="item-image" alt="portfolio item leather earing">
+					<figcaption class="port-desc">
+						<p class="item-name">Leather earings</p>
+						<button href="" class="button button-dark button-small shop-item-button">add to cart</button>
+						<p class="price-tag">Ksh.<span class="shop-item-price">600</span>
+						</p>
+					</figcaption>
+				</figure>
+				<!-- product 2 -->
+				<figure class="port-item">
+					<img src="img/product-2.png" class="item-image" alt="portfolio item leather earing">
+					<figcaption class="port-desc">
+						<p class="item-name">Diamond shaped earings</p>
+						<button href="" class="button button-dark button-small shop-item-button">add to cart</button>
+						<p class="price-tag">Ksh.<span class="shop-item-price">600</span>
+						</p>
+					</figcaption>
+				</figure>
+				<!-- product 3 -->
+				<figure class="port-item">
+					<img src="img/product-3.png" class="item-image" alt="portfolio item Ankara earing">
+					<figcaption class="port-desc">
+						<p class="item-name">Ankara earings</p>
+						<button href="" class="button button-dark button-small shop-item-button">add to cart</button>
+						<p class="price-tag">Ksh.<span class="shop-item-price">700</span>
+						</p>
+					</figcaption>
+				</figure>
+				<!-- product 4 -->
+				<figure class="port-item">
+					<img src="img/product-4.png" class="item-image" alt="portfolio item ankara choker">
+					<figcaption class="port-desc">
+						<p class="item-name">Beaded Ankara choker</p>
+						<button href="" class="button button-dark button-small shop-item-button">add to cart</button>
+						<p class="price-tag">Ksh. <span class="shop-item-price">1300</span>
+						</p>
+					</figcaption>
+				</figure>
+				<!-- product 5 -->
+				<figure class="port-item">
+					<img src="img/product-5.png" class="item-image" alt="portfolio item ankara hoops">
+					<figcaption class="port-desc">
+						<p class="item-name">Ankara Hoops</p>
+						<button href="" class="button button-dark button-small shop-item-button">add to cart</button>
+						<p class="price-tag">Ksh.<span class="shop-item-price">900</span>
+						</p>
+					</figcaption>
+				</figure>
+				<!-- product 6 -->
+				<figure class="port-item">
+					<img
+						src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+						class="item-image" alt="portfolio item ring">
+					<figcaption class="port-desc">
+						<p class="item-name">Ring</p>
+						<button href="" class="button button-dark button-small shop-item-button">add to cart</button>
+						<p class="price-tag">Ksh.<span class="shop-item-price">3000</span>
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+		<div class="footer-container">
+			<div class="container ">
+				<footer>
+					<div class="col-3">
+						<p>
+						<h3>about us</h3>
+						we are an independent family run jewelry business established in Kenya since 1994. Coming from a background
+						of jewelers from the last three generations we have wealth of knowledge in this business.</p>
+					</div>
+					<div class="col-1">
+						<ul class="unstyled-lists">
+							<li> <a href="#home-about">About Lerav collections</a>
+							</li>
+							<li> <a>Delivery Guide</a>
+							</li>
+							<li> <a href="#portfolio">portfolio</a>
+							</li>
+							<li> <a>terms & conditions</a>
+							</li>
+							<li> <a>Frequently asked questions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-1">
+						<ul class="unstyled-lists socials">
+							<h3>follow us</h3>
+							<li><a href="#"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a>
+							</li>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li><a href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li><a href="#"><i class="fab fa-pinterest-p"></i></a>
+							</li>
+							<li><a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+							</li>
+						</ul>
+						<ul>
+							<h3>Accepted payments</h3>
+							<img src="img/mpesa.png" alt="mpesa logo">
+							<img src="img/airtel-money.png" alt="airtel money logo">
+							<img src="img/mastercard.png" alt="mastercard logo">
+							<img src="img/visa.png" alt="visa logo">
+						</ul>
+					</div>
+					<section class="footnote">Created By <span>Ian Okova</span>
+						<br />
+						<h3>Contact him</h3>
+						<ul>
+							<li><a href="ianokova@gmail.com" class="ian-social"><i class="fas fa-envelope"></i></a>
+							</li>
+							<li> <a href="https://twitter.com/IanOkova" class="ian-social"><i class="fab fa-twitter"></i></a>
+							</li>
+							<li><a href="tel:+254114095616" class="ian-social"><i class="fas fa-phone"></i></a>
+							</li>
+							<li> <a href="https://www.youtube.com/channel/UCrdRPXdMp0vZtod7nGub8zA" class="ian-social"><i
+										class="fab fa-youtube"></i></a>
+							</li>
+							<li><a href=" https://wa.me/254114095616" class="ian-social"><i class="fab fa-whatsapp"></i></a>
+							</li>
+						</ul>
+						<br />2020&#169;
+					</section>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
 
-    <section class="products-hero">
-      <div class="container">
-        <h2><a href="index.html">Home</a>-> <span>products</span></h2>
-      </div>
-    </section>
-    <section class="products">
-      <h1>Our products</h1>
-      <div class="container">
-        <!-- product one -->
-        <figure class="port-item">
-            <img src="https://i.imgur.com/8umNvRb.jpeg" class="item-image" alt="portfolio item leather earing">
-            <figcaption class="port-desc">
-              <p class="item-name">Leather earings</p>
-              <button href="" class="button button-dark button-small shop-item-button">add to cart</button>
-              <p class="price-tag">Ksh.<span class="shop-item-price">600</span>   </p>
 
-            </figcaption>
-        </figure>
-        <!-- product 2 -->
-        <figure class="port-item">
-            <img src="https://i.imgur.com/SOn05bt.jpeg" class="item-image" alt="portfolio item leather earing">
-            <figcaption class="port-desc">
-              <p class="item-name">Diamond shaped earings</p>
-              <button href="" class="button button-dark button-small shop-item-button">add to cart</button>
-              <p class="price-tag">Ksh.<span class="shop-item-price">600</span>                </p>
-            </figcaption>
-        </figure>
-        <!-- product 3 -->
-        <figure class="port-item">
-            <img src="https://i.imgur.com/UYiIeFD.jpeg" class="item-image" alt="portfolio item Ankara earing">
-            <figcaption class="port-desc">
-              <p class="item-name">Ankara earings</p>
-              <button href="" class="button button-dark button-small shop-item-button">add to cart</button>
-              <p class="price-tag">Ksh.<span class="shop-item-price">700</span>               </p>
-            </figcaption>
-        </figure>
-        <!-- product 4 -->
-        <figure class="port-item">
-            <img src="https://i.imgur.com/cQdKv2C.jpeg" class="item-image" alt="portfolio item ankara choker">
-            <figcaption class="port-desc">
-              <p class="item-name">Beaded Ankara choker</p>
-              <button href="" class="button button-dark button-small shop-item-button">add to cart</button>
-              <p class="price-tag">Ksh.   <span class="shop-item-price">1300</span>          </p>
-
-            </figcaption>
-        </figure>
-        <!-- product 5 -->
-        <figure class="port-item">
-            <img src="https://i.imgur.com/FZFQ1W3.jpeg" class="item-image" alt="portfolio item ankara hoops">
-            <figcaption class="port-desc">
-              <p class="item-name">Ankara Hoops</p>
-              <button href="" class="button button-dark button-small shop-item-button">add to cart</button>
-              <p class="price-tag">Ksh.<span class="shop-item-price">900</span>                </p>
-            </figcaption>
-        </figure>
-        <!-- product 6 -->
-        <figure class="port-item">
-            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"  class="item-image" alt="portfolio item ring">
-            <figcaption class="port-desc">
-              <p class="item-name">Ring</p>
-              <button href="" class="button button-dark button-small shop-item-button">add to cart</button>
-              <p class="price-tag">Ksh.<span class="shop-item-price">3000</span>              </p>
-
-            </figcaption>
-        </figure>
-      </div>
-    </section>
-    <script type="text/javascript">
-
-    </script>
-    <div class="container">
-      <h2>Cart items</h2>
-      <div class="cart-row">
-        <span class="cart-item cart-header cart-colum">Item</span>
-        <span class="cart-item cart-header cart-colum">price</span>
-        <span class="cart-item cart-header cart-colum">quantity</span>
-      </div>
-      <div class="cart-items">
-      </div>
-      <div class="cart-total">
-        <strong>Total(Ksh)</strong>
-        <span class="cart-total-price">0.00</span>
-        <button class="btn-purchase button button-dark">Confirm Order</button>
-      </div>
-    </div>
-    <div class="footer-container">
-    <div class="container ">
-      <footer>
-        <div class="col-3">
-        <p>
-          <h3>about us</h3>
-          we are an  independent family run jewelry business established in Kenya
-          since 1994. Coming from a background of jewelers from the last three generations
-           we have wealth of knowledge in this business.
-          </p>
-          </div>
-          <div class="col-1">
-          <ul class="unstyled-lists">
-            <h3>Useful links</h3>
-            <li><a>About Lerav collections</a></li>
-            <li><a>Delivery Guide</a></li>
-            <li><a>terms & conditions</a></li>
-            <li><a>Frequently asked questions</a></li>
-          </ul>
-          </div>
-          <div class="col-1">
-
-            <ul class="unstyled-lists socials">
-              <h3>follow us</h3>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-              <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-            </ul>
-            <ul >
-              <h3>Accepted payments</h3>
-              <img src="https://i.imgur.com/dhitA17.png" alt="mpesa logo">
-              <img src="https://i.imgur.com/I4CmQWe.png" alt="airtel money logo">
-              <img src="https://i.imgur.com/mlPaEZa.png" alt="mastercard logo">
-              <img src="https://i.imgur.com/nIz4Eof.png" alt="visa logo">
-            </ul>
-          </div>
-
-          <section class="footnote">
-            Created By <span>Ian Okova</span><br />
-
-              <h3>follow him</h3>
-              <ul>
-                <li><a href="ianokova@gmail.com" class="ian-social"><i class="fas fa-envelope"></i></a></li>
-                <li> <a href="https://twitter.com/IanOkova" class="ian-social"><i class="fab fa-twitter"></i></a>  </li>
-                <li><a href="tel:+254114095616" class="ian-social"><i class="fas fa-phone"></i></a></li>
-                <li> <a href="https://www.youtube.com/channel/UCrdRPXdMp0vZtod7nGub8zA" class="ian-social"><i class="fab fa-youtube"></i></a>  </li>
-                <li><a href=" https://wa.me/254114095616" class="ian-social"><i class="fab fa-whatsapp"></i></a></li>
-              </ul>
-
-            <br />
-            2020&#169;
-          </section>
-      </footer>
-    </div>
-    </div>
-
-  </div>
-  </body>
-  <div id="loader">
-     <div class="folding">
-        <div class="sk-cube1 sk-cube"></div>
-        <div class="sk-cube2 sk-cube"></div>
-        <div class="sk-cube4 sk-cube"></div>
-        <div class="sk-cube3 sk-cube"></div>
-     </div>
-  </div>
 </html>
